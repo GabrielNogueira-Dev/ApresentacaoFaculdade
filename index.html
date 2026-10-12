@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do Gabriel</title>
+  <meta name="description" content="Página de apresentação, projetos e contacto do Gabriel.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #003366; /* azul escuro */
+    }
+
+    header {
+      background-color: #009739; /* verde bandeira */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffdf00; /* amarelo */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #009739;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th {
+      background-color: #ffdf00;
+      color: #003366;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    td {
+      border: 1px solid #003366;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #003366;
+    }
+
+    input, textarea {
+      padding: 8px;
+      border: 1px solid #009739;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #ffdf00;
+      color: #003366;
+      font-weight: bold;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #009739;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gabriel Nogueira Falcão Farias</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Sou o Gabriel, estudante de programação e desenvolvimento web, a aprendendo HTML, CSS, JavaScript .</p>
+      <ol>
+        <li>Consolidando as bases de HTML, CSS e JavaScript.</li>
+        <li>Tenho gosto por páginas web a quase 2 anos</li>
+      </ol>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <article>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" 
+               alt="Bandeira do Brasil" 
+               width="400">
+          <figcaption>Bandeira do Brasil</figcaption>
+          <h6>So pra descontrair, por que estamos em eleição</h6>
+        </figure>
+      </article>
+
+      <table>
+        <h1>Estudos</h1>
+        <thead>
+          <tr>
+            <th>Disciplina</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://house-cleaner.vercel.app/" target="_blank">House Cleaner (Projeto Vercel)</a></td>
+            <td>CONCLUÍDO</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>CONCLUÍDO</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>CONCLUÍDO</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>CONCLUÍDO</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="digite seu nome">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="digite seu texto de apoio"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
